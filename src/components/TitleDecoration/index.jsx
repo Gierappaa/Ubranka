@@ -8,14 +8,11 @@ const images = [
 class TitleDecoration extends React.Component {
   render() {
     return (
-      <div className='titleDecoration'>
-        <p> {this.props.title} </p>
-        <p> {this.props.subtitle}</p>
-        <img src={images[0]} alt="" /><br />
-        <div className='titleDecoration__buttons'>
-          <div className='titleDecoration__buttons__btn' display= 'none'> {this.props.pierwszy}</div>
-          <div className='titleDecoration__buttons__btn'> {this.props.drugi}</div>
-        </div>
+      <div className='title-decoration'>
+        <p className='title-decoration__title'> {this.props.title} </p>
+        <p className='title-decoration__subtitle'> {this.props.subtitle}</p>
+        <img className='title-decoration__pattern' src={images[0]} alt="" /><br />
+          { this.props.children }
       </div>
     )
   }
