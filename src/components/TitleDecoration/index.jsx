@@ -13,6 +13,7 @@ class TitleDecoration extends React.Component {
         <p> {this.props.subtitle}</p>
         <img src={images[0]} alt="" /><br />
         <div className='titleDecoration__buttons'>
+        {/* wywalić */}
           <div className='titleDecoration__buttons__btn' display= 'none'> {this.props.pierwszy}</div>
           <div className='titleDecoration__buttons__btn'> {this.props.drugi}</div>
         </div>
