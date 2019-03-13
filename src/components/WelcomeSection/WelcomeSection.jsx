@@ -17,7 +17,7 @@ export class WelcomeSection extends React.Component {
                 </TitleDecoration>
 
                 <div className='titleDecoration__buttons'>
-                    <div className='titleDecoration__buttons__btn' display= 'none'> {this.props.pierwszy}</div>
+                    <div className='titleDecoration__buttons__btn'> {this.props.pierwszy}</div>
                     <div className='titleDecoration__buttons__btn'> {this.props.drugi}</div>
                 </div>
             </div>

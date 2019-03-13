@@ -10,7 +10,7 @@ import { WelcomeSection } from './components/WelcomeSection/WelcomeSection.jsx';
 document.addEventListener('DOMContentLoaded', function () {
   ReactDOM.render(<div>
     <WelcomeSection />
-    <Header/>
+    {/* <Header/> */}
     <Counter/>
     <SecondComponent/>
   </div>,
