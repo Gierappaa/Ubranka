@@ -1,0 +1,29 @@
+
+.header{
+  display: flex;
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+
+    & li a {
+      text-decoration: inherit;
+      color: inherit;
+      padding: 10px;
+    }
+
+    &--logg{
+      justify-content: flex-end;
+      list-style-type: none;
+      display: flex;
+      text-decoration: none;
+
+      & li a{
+        text-decoration: inherit;
+        color: inherit;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+        padding: 10px;
+      }
+    }
+  }
+}

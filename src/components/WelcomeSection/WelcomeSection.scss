@@ -1,0 +1,13 @@
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  background-image: url("../../images/header_start_img.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 600px;
+  width: 100%;
+}

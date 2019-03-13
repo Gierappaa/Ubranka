@@ -1,10 +1,21 @@
 import React from 'react';
 import './FirstComponent.scss';
 
-class Counter extends React.Component {
+const items = [{
+    count: 10,
+    title: 'Oddanych worków',
+    subtitle: 'BLABLABLA',
+}];
+
+export class Counter extends React.Component {
   render() {
     return (
-      <div className="componet1">
+      <div id="counter" className="componet1">
+          {
+              items.map((item) => (
+                  <CounterItem count={item.count} title={item.title} subtitle={item.subtitle}/>
+              ))
+          }
         <div className='componet1__column'>
           <p className='componet1__title'>10</p>
           <h4 className='componet1__subtitle'>Oddanych worków</h4>
@@ -27,7 +38,4 @@ class Counter extends React.Component {
     )
   }
 }
-
-
-export default Counter;
 
