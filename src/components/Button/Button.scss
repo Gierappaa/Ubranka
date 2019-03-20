@@ -1,4 +1,8 @@
+@import "../../style/variables";
+
 .button {
+  border: $button-border;
+
   &--has-border {
 
   }
