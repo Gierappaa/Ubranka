@@ -13,12 +13,17 @@ export class Button extends React.Component {
 
     const style = {
       fontSize: this.props.fontSize || '14px',
+      background: this.props.background || "none",
+      padding: this.props.padding || "2px",
+      margin: this.props.margin || "5px",
+      width: this.props.width || "250px",
     };
 
+
     return (
-        <button className={classNames(classes)} type="button" style={style}>
-          {this.props.children}
-        </button>
+      <button className={classNames(classes)} type="button" style={style}>
+        {this.props.children}
+      </button>
     )
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './FirstComponent.scss';
+import './Counter.scss';
 
 const items = [{
     count: 10,

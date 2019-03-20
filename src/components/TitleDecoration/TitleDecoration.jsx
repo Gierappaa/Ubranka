@@ -5,7 +5,7 @@ const images = [
   require('./../../images/decoration.png')
 ];
 
-class TitleDecoration extends React.Component {
+export class TitleDecoration extends React.Component {
   render() {
     return (
       <div className='title-decoration'>
@@ -17,6 +17,3 @@ class TitleDecoration extends React.Component {
     )
   }
 }
-
-export default TitleDecoration;
-

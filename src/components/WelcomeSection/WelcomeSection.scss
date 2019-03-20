@@ -10,4 +10,10 @@
   background-size: contain;
   height: 600px;
   width: 100%;
+
+  &__buttons{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
 }

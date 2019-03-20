@@ -2,17 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './style/main.scss';
-import Header from './components/Header/index';
-import { Counter } from './components/FirstComponent/index';
-import SecondComponent from './components/SecondComponent/index.jsx';
+import { Counter } from './components/Counter/Counter';
 import { WelcomeSection } from './components/WelcomeSection/WelcomeSection.jsx';
+import { CreateAccount } from './components/CreacteAccount/CreateAccount';
 
 document.addEventListener('DOMContentLoaded', function () {
   ReactDOM.render(<div>
     <WelcomeSection />
-    {/* <Header/> */}
-    <Counter/>
-    <SecondComponent/>
+    <Counter />
+    <CreateAccount />
   </div>,
     document.getElementById('app')
   );
