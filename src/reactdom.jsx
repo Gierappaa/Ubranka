@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './style/main.scss';
-import Header from './components/Header/index.jsx';
-import { Counter } from './components/FirstComponent/index.jsx';
+import Header from './components/Header/index';
+import { Counter } from './components/FirstComponent/index';
 import SecondComponent from './components/SecondComponent/index.jsx';
 import { WelcomeSection } from './components/WelcomeSection/WelcomeSection.jsx';
 

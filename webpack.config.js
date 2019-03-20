@@ -69,6 +69,9 @@ module.exports = {
       hash: true
     }),
     new MiniCssExtractPlugin({filename: "[name].css", chunkFilename: "[id].css"})
-  ]
-}
+  ],
+  resolve: {
+      extensions: ['.js', '.jsx'],
+  }
+};
 

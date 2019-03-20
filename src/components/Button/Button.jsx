@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 import './Button.scss';
@@ -15,7 +16,9 @@ export class Button extends React.Component {
     };
 
     return (
-      <input className={classNames(classes)} type="button" style={style}/>
+        <button className={classNames(classes)} type="button" style={style}>
+          {this.props.children}
+        </button>
     )
   }
 }
