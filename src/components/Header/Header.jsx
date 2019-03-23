@@ -7,7 +7,7 @@ const images = [
 import './Header.scss';
 
 
-class Header extends React.Component {
+export class Header extends React.Component {
     // handleNavChange: () => {
     //     // Kod do nawigacji
     // };
@@ -37,7 +37,4 @@ class Header extends React.Component {
         )
     }
 }
-
-
-export default Header;
 

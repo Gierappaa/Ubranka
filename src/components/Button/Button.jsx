@@ -7,8 +7,8 @@ export class Button extends React.Component {
   render() {
     const classes = {
       button: true,
-      'button--border': this.props.hasBorder,
-      'button--uppercase': this.props.uppercase,
+      button_has_border: this.props.hasBorder,
+      button_uppercase: this.props.uppercase,
     };
 
     const style = {

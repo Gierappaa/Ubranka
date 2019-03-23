@@ -2,17 +2,16 @@
 
 .button {
   border: $button-border;
-
-  &--has-border {
-    border: 1px solid black
+  &_has_border {
+    border: 2px solid yellow
 
   }
 
-  &--uppercase {
+  &_uppercase {
     text-transform: uppercase;
   }
 
-  &--background{
+  &_background{
     background: white;
   }
 }

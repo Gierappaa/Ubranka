@@ -12,7 +12,7 @@ export class TitleDecoration extends React.Component {
         <p className='title-decoration__title'> {this.props.title} </p>
         <p className='title-decoration__subtitle'> {this.props.subtitle}</p>
         <img className='title-decoration__pattern' src={images[0]} alt="" /><br />
-          { this.props.children }
+        {this.props.children}
       </div>
     )
   }
