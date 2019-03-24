@@ -10,7 +10,7 @@ const items = [{
 export class Counter extends React.Component {
   render() {
     return (
-      <div id="counter" className="componet1">
+      <div className="componet1" >
           {/* {
               items.map((item) => (
                   <CounterItem count={item.count} title={item.title} subtitle={item.subtitle}/>

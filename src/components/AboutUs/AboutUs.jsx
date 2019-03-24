@@ -9,7 +9,7 @@ const images = [
 export class AboutUs extends React.Component {
     render() {
         return (
-            <div className="aboutUs-section">
+            <div className="aboutUs-section" name="AboutUs">
                 <div>
                     <TitleDecoration
                         title="O nas">

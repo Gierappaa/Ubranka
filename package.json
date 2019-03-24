@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "react-scroll": "^1.7.11",
     "react-twitter-share-link": "^1.2.0"
   }
 }

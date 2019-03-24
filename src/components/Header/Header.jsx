@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 
 const images = [
     require('./../../images/header_start_img.jpg'),
@@ -26,10 +28,12 @@ export class Header extends React.Component {
                     </ul>
 
                     <ul className="header__list">
-                        <li><a href="#"> Start</a></li>
-                        <li><a href="#">O co chodzi</a></li>
-                        <li><a href="#">O nas</a></li>
-                        <li><a href="#">Fundacje i organizacje</a></li>
+                        <li><Link activeClass="active" className="" to="Start" spy={true} smooth={true} duration={500} >Start</Link></li>
+                        <li><Link activeClass="active" className="" to="WhatsAbout" spy={true} smooth={true} duration={500} >O co chodzi</Link></li>
+                        <li><Link activeClass="active" className="" to="AboutUs" spy={true} smooth={true} duration={500} >O nas</Link></li>
+                        <li><Link activeClass="active" className="" to="" spy={true} smooth={true} duration={500} >Fundacje i organizacje</Link></li>
+                        <li><Link activeClass="active" className="" to="" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
+                     
                         <li><a href="#">Kontakt</a></li>
                     </ul>
                 </div>
