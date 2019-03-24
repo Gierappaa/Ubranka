@@ -20,9 +20,9 @@ const styles = theme => ({
 
 export class ContactUs extends React.Component {
     state = {
-        name: 'imię',
-        massage: 'Wiadomość',
-        email: 'email',
+        name: '',
+        massage: '',
+        email: '',
     };
 
     componentDidMount() {
@@ -47,16 +47,20 @@ export class ContactUs extends React.Component {
             <div className="contactUs-section" name="ContactUs">
                 <TitleDecoration title="Skontaktuj się z nami"></TitleDecoration>
 
-                {/* <FormControl className={classes.formControl}> */}
+                <FormControl className={"imie"}>
                 <InputLabel htmlFor="component-simple">Imię</InputLabel>
                 <Input id="component-simple" value={this.state.name} onChange={this.handleChange} />
+                </FormControl>
 
+                <FormControl className={"email"}>
                 <InputLabel htmlFor="component-simple">e-mail</InputLabel>
                 <Input id="component-simple" value={this.state.email} onChange={this.handleChangeEMail} />
+                </FormControl>
 
+                <FormControl className={"wiadomosc"}>
                 <InputLabel htmlFor="component-simple">Wiadomość</InputLabel>
                 <Input id="component-simple" value={this.state.massage} onChange={this.handleChangeMassage} />
-                {/* </FormControl> */}
+                </FormControl>
                 <Button>Wyślij</Button>
             </div>
         );
