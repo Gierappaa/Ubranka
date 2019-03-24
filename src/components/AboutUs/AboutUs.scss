@@ -1,8 +1,8 @@
 .aboutUs-section {
   background-color: lightgray;
   margin-top: 350px;
-  border:1px red solid;
-  // display: flex;
+  // border:1px red solid;
+  display: flex;
   // flex-direction: column;
   // justify-content: flex-start;
   // align-items: flex-start;
@@ -13,7 +13,11 @@
   background-size: contain;
   height: 600px;
   width: 100%;
+  &__textSide{
+    width: 50%;
+  }
   &__image{
     width: 50%;
+    padding: 20px 0;
   }
 }

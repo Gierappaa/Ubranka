@@ -17,10 +17,6 @@ export class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                <div className="header__image">
-
-                </div>
-                {/* <img className="header__image" src={images[0]} alt="Tutaj jest obrazek" /> */}
                 <div>
                     <ul className="header__list--logg">
                         <li><a href="#"> Zaloguj</a></li>
@@ -28,13 +24,11 @@ export class Header extends React.Component {
                     </ul>
 
                     <ul className="header__list">
-                        <li><Link activeClass="active" className="" to="Start" spy={true} smooth={true} duration={500} >Start</Link></li>
-                        <li><Link activeClass="active" className="" to="WhatsAbout" spy={true} smooth={true} duration={500} >O co chodzi</Link></li>
-                        <li><Link activeClass="active" className="" to="AboutUs" spy={true} smooth={true} duration={500} >O nas</Link></li>
-                        <li><Link activeClass="active" className="" to="" spy={true} smooth={true} duration={500} >Fundacje i organizacje</Link></li>
-                        <li><Link activeClass="active" className="" to="" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
-                     
-                        <li><a href="#">Kontakt</a></li>
+                        <li><Link activeClass="active" className="" to="Start" spy={true} smooth={true} duration={2500} >Start</Link></li>
+                        <li><Link activeClass="active" className="" to="WhatsAbout" spy={true} smooth={true} duration={2500} >O co chodzi</Link></li>
+                        <li><Link activeClass="active" className="" to="AboutUs" spy={true} smooth={true} duration={2500} >O nas</Link></li>
+                        <li><Link activeClass="active" className="" to="Organizations" spy={true} smooth={true} duration={2500} >Fundacje i organizacje</Link></li>
+                        <li><Link activeClass="active" className="" to="ContactUs" spy={true} smooth={true} duration={2500} >Kontakt</Link></li>
                     </ul>
                 </div>
             </div>

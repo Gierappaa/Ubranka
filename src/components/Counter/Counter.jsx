@@ -2,16 +2,16 @@ import React from 'react';
 import './Counter.scss';
 
 const items = [{
-    count: 10,
-    title: 'Oddanych worków',
-    subtitle: 'BLABLABLA',
+  count: 10,
+  title: 'Oddanych worków',
+  subtitle: 'BLABLABLA',
 }];
 
 export class Counter extends React.Component {
   render() {
     return (
       <div className="componet1" >
-          {/* {
+        {/* {
               items.map((item) => (
                   <CounterItem count={item.count} title={item.title} subtitle={item.subtitle}/>
               ))

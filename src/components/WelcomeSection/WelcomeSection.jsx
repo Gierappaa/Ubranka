@@ -7,7 +7,7 @@ import { Button } from '../Button/Button.jsx';
 export class WelcomeSection extends React.Component {
     render() {
         return (
-            <div className="welcome-section">
+            <div className="welcome-section" name="Start">
                 <Header />
                 <div>
                     <TitleDecoration
