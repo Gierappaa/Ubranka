@@ -1,16 +1,22 @@
 .contactUs-section {
-  // background-color: lightgray;
-  // margin-top: 350px;
+  background-color: #f1f3f2;
+  margin-top: 150px;
   // border:1px red solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-  // background-image: url("../../images/header_start_img.jpg");
+  align-items: flex-end;
+  background-image: url("../../images/footer_bg_img.jpg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
-  height: 300px;
+  height: 600px;
   width: 100%;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
 }

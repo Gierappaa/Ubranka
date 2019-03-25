@@ -2,20 +2,7 @@ import React from 'react';
 import './ContactUs.scss';
 import { Button } from '../Button/Button';
 import { TitleDecoration } from '../TitleDecoration/TitleDecoration';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
-
-
-const styles = theme => ({
-    container: {
-        display: 'flex',
-        flexWrap: 'wrap',
-    },
-    formControl: {
-        margin: theme.spacing.unit,
-    },
-});
+import TextField from '@material-ui/core/TextField';
 
 
 export class ContactUs extends React.Component {
@@ -27,41 +14,59 @@ export class ContactUs extends React.Component {
 
     componentDidMount() {
         this.forceUpdate();
-    }
-
-    handleChange = e => {
-        this.setState({ name: e.target.value });
     };
 
-    handleChangeMassage = e => {
-        this.setState({ massage: e.target.value });
-    }
-
-    handleChangeEMail = e => {
-        this.setState({ email: e.target.value })
-    }
+    handleChangeName = name => event => {
+        this.setState({ [name]: event.target.value });
+    };
+    handleChangeEmail = email => event => {
+        this.setState({ [email]: event.target.value });
+    };
+    handleChangeMassage = massage => event => {
+        this.setState({ [massage]: event.target.value });
+    };
     render() {
-        const { classes } = this.props;
 
         return (
             <div className="contactUs-section" name="ContactUs">
-                <TitleDecoration title="Skontaktuj się z nami"></TitleDecoration>
+                <div className="contactUs-section__form">
+                    <TitleDecoration title="Skontaktuj się z nami"></TitleDecoration>
 
-                <FormControl className={"imie"}>
-                <InputLabel htmlFor="component-simple">Imię</InputLabel>
-                <Input id="component-simple" value={this.state.name} onChange={this.handleChange} />
-                </FormControl>
+                    <div className="contactUs-section__middle">
 
-                <FormControl className={"email"}>
-                <InputLabel htmlFor="component-simple">e-mail</InputLabel>
-                <Input id="component-simple" value={this.state.email} onChange={this.handleChangeEMail} />
-                </FormControl>
+                        <TextField
+                            id="standard-name"
+                            label="Imię"
+                            className="imię"
+                            value={this.state.name}
+                            onChange={this.handleChangeName('name')}
+                            margin="normal"
+                        />
 
-                <FormControl className={"wiadomosc"}>
-                <InputLabel htmlFor="component-simple">Wiadomość</InputLabel>
-                <Input id="component-simple" value={this.state.massage} onChange={this.handleChangeMassage} />
-                </FormControl>
-                <Button>Wyślij</Button>
+                        <TextField
+                            id="standard-email"
+                            label="E-mail"
+                            className={"email"}
+                            value={this.state.email}
+                            onChange={this.handleChangeEmail('email')}
+                            margin="normal"
+                        />
+                    </div>
+                    <TextField
+                        id="standard-massage"
+                        label="Wiadomość"
+                        className={"massage"}
+                        value={this.state.massage}
+                        onChange={this.handleChangeMassage('massage')}
+                        margin="normal"
+                    />
+
+
+                    <Button
+                        padding="14px"
+                        fontSize="2rem">
+                        Wyślij</Button>
+                </div>
             </div>
         );
     }
