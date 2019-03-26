@@ -1,5 +1,6 @@
 .contactUs-section {
   background-color: #f1f3f2;
+  padding: 0 100px;
   margin-top: 150px;
   // border:1px red solid;
   display: flex;
@@ -12,11 +13,34 @@
   background-size: contain;
   height: 600px;
   width: 100%;
+
   &__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 35%;
+    max-width: 600px;
+  }
+
+  &__input {
+    flex-grow: 1;
+
+    &:first-child {
+      margin-right: 4px;
+    }
+
+    &:last-child {
+      margin-left: 4px;
+    }
+
+    &--wide {
+      width: 100%;
+    }
+  }
+
+  &__middle {
+    width: 100%;
+    display: flex;
   }
 }

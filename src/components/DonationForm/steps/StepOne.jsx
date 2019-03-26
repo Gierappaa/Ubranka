@@ -1,7 +1,7 @@
 import React from 'react';
 import './StepOne.scss';
 import { BrowserRouter as Router, Route, Link as RouterLink } from "react-router-dom";
-import { Button } from '../Button/Button';
+import { Button } from '../../Button/Button';
 
 
 export class StepOne extends React.Component {
@@ -16,7 +16,7 @@ export class StepOne extends React.Component {
                 <div>
                     Zaznacz co chcesz dodać:
                 </div>
-                <Button><RouterLink to="/StepTwo">Dalej</RouterLink>
+                <Button><RouterLink to="/loggedIn/stepTwo">Dalej</RouterLink>
                 </Button>
 
             </div>

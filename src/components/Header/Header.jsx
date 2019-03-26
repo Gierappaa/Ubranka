@@ -22,7 +22,7 @@ export class Header extends React.Component {
                         <li><ScrollLink activeClass="active" className="" to="WhatsAbout"
                             spy={true} smooth={true} duration={2500} >O co chodzi</ScrollLink></li>
 
-                        <li><ScrollLink activeClass="active" className="" to="AboutUs"
+                        <li><ScrollLink activeClass="active" className="" to="aboutUs"
                             spy={true} smooth={true} duration={2500} >O nas</ScrollLink></li>
 
                         <li><ScrollLink activeClass="active" className="" to="Organizations"
