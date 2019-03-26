@@ -1,32 +1,29 @@
-.componet1{
-    background-color: yellow;
-    font-family: "Open Sans";
-    color: #605327;
+.counter-section {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAYAAABirU3bAAAAH0lEQVQYV2P8eYz//2XGFQy6/yMYQDQjVgEGJEBYBQBq+Rt7nOWMHAAAAABJRU5ErkJggg==);
+  font-family: "Open Sans";
+  color: #605327;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  padding: 20px 0;
+
+  &__column {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 200px;
-    padding: 20px 0;
+    align-items: center;
+  }
 
-    &__column{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  &__title {
+    font-size: 80px;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
 
-    &__title{
-        font-size: 80px;
-    }
-    &__subtitle{
-        text-transform: uppercase;
-        padding: 10px 0;
-    }
-
-    &_content{
-        width: 70%;
-        font-style: light;
-    }
+  &__content {
+    width: 70%;
+    font-style: light;
+  }
 }
-
-
-

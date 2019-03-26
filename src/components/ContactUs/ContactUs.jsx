@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField';
 
 
 export class ContactUs extends React.Component {
-    state = {
+    state = {   
         name: '',
         massage: '',
         email: '',
@@ -30,7 +30,7 @@ export class ContactUs extends React.Component {
         return (
             <div className="contactUs-section" name="ContactUs">
                 <div className="contactUs-section__form">
-                    <TitleDecoration title="Skontaktuj się z nami"></TitleDecoration>
+                    <TitleDecoration title="Skontaktuj się z nami">Formularz kontaktowy</TitleDecoration>
 
                     <div className="contactUs-section__middle">
 
