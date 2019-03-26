@@ -21,7 +21,7 @@ export class Routing extends React.Component {
                     <Route path='/register' component={Register} />
                     <Route path='/loggedIn' component={LoggedIn} />
 
-                </div>
+                    </div>
             </Router>
         );
     }
