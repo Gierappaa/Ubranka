@@ -1,12 +1,13 @@
 import React from 'react';
+
 import './ContactUs.scss';
-import { Button } from '../Button/Button';
-import { TitleDecoration } from '../TitleDecoration/TitleDecoration';
+import { Button } from '../../components/Button/Button';
+import { TitleDecoration } from '../../components/TitleDecoration/TitleDecoration';
 import TextField from '@material-ui/core/TextField';
 
 
 export class ContactUs extends React.Component {
-    state = {   
+    state = {
         name: '',
         massage: '',
         email: '',
@@ -37,7 +38,7 @@ export class ContactUs extends React.Component {
                         <TextField
                             id="standard-name"
                             label="Imię"
-                            className="imię"
+                            className="imię contactUs-section__input"
                             value={this.state.name}
                             onChange={this.handleChangeName('name')}
                             margin="normal"
@@ -46,7 +47,7 @@ export class ContactUs extends React.Component {
                         <TextField
                             id="standard-email"
                             label="E-mail"
-                            className={"email"}
+                            className="email contactUs-section__input"
                             value={this.state.email}
                             onChange={this.handleChangeEmail('email')}
                             margin="normal"
@@ -55,7 +56,7 @@ export class ContactUs extends React.Component {
                     <TextField
                         id="standard-massage"
                         label="Wiadomość"
-                        className={"massage"}
+                        className="contactUs-section__input contactUs-section__input--wide"
                         value={this.state.massage}
                         onChange={this.handleChangeMassage('massage')}
                         margin="normal"

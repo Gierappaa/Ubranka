@@ -1,6 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Step1 from "./steps/Step1.jsx";
 import { StepOne } from './steps/StepOne'
 import { StepTwo } from './steps/StepTwo'
 import { StepThree } from './steps/StepThree'
@@ -21,10 +21,10 @@ export class DonationForm extends React.Component {
         return (
             <Router>
                 <div>
-                    <Route exact path='/' component={StepOne} />
-                    <Route path='/stepTwo' component={StepTwo} />
-                    <Route path='/stepThree' component={StepThree} />
-                    <Route path='/stepFour' component={StepFour} />
+                    <Route exact path='/loggedIn' component={StepOne} />
+                    <Route path='/loggedIn/stepTwo' component={StepTwo} />
+                    <Route path='/loggedIn/stepThree' component={StepThree} />
+                    <Route path='/loggedIn/stepFour' component={StepFour} />
                 </div>
             </Router>
         )

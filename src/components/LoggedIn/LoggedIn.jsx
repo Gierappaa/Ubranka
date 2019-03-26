@@ -1,8 +1,9 @@
 import React from 'react';
 import './LoggedIn.scss';
 import { Header } from './../Header/Header';
-import { ContactUs } from './../ContactUs/ContactUs';
+import { ContactUs } from '../../layouts/ContactUs/ContactUs';
 import { TitleDecoration } from './../TitleDecoration/TitleDecoration';
+import { DonationForm } from "../DonationForm/DonationForm";
 
 export class LoggedIn extends React.Component {
     render() {
@@ -45,6 +46,7 @@ export class LoggedIn extends React.Component {
                     </div>
 
                 </div>
+                <DonationForm/>
                 <ContactUs />
             </div>
         );

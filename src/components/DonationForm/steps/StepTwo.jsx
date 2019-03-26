@@ -1,6 +1,7 @@
 import React from 'react';
 import './StepTwo.scss';
 import { BrowserRouter as Router, Route, Link as RouterLink } from "react-router-dom";
+import { Button } from "../../Button/Button";
 
 export class StepTwo extends React.Component {
 
