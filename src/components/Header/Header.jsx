@@ -16,20 +16,12 @@ export class Header extends React.Component {
 
                     <ul className="header__list">
 
-                        <li><ScrollLink activeClass="active" className="" to="Start"
-                            spy={true} smooth={true} duration={2500} >Start</ScrollLink></li>
+                        <li><RouterLink to="/start">Start</RouterLink></li>
+                        <li><RouterLink to="/whatsabout">O co chodzi</RouterLink></li>
+                        <li><RouterLink to="/aboutus">O nas</RouterLink></li>
+                        <li><RouterLink to="/organizations">Fundacje i organizacje</RouterLink></li>
+                        <li><RouterLink to="/contactus">Kontakt</RouterLink></li>
 
-                        <li><ScrollLink activeClass="active" className="" to="WhatsAbout"
-                            spy={true} smooth={true} duration={2500} >O co chodzi</ScrollLink></li>
-
-                        <li><ScrollLink activeClass="active" className="" to="aboutUs"
-                            spy={true} smooth={true} duration={2500} >O nas</ScrollLink></li>
-
-                        <li><ScrollLink activeClass="active" className="" to="Organizations"
-                            spy={true} smooth={true} duration={2500} >Fundacje i organizacje</ScrollLink></li>
-
-                        <li><ScrollLink activeClass="active" className="" to="ContactUs"
-                            spy={true} smooth={true} duration={2500} >Kontakt</ScrollLink></li>
                     </ul>
                 </div>
             </div>

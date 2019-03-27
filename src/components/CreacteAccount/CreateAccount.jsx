@@ -7,7 +7,7 @@ import { Button } from '../Button/Button';
 
 export class CreateAccount extends React.Component {
   render() {
-    return (<div className="createAccount-section" name="WhatsAbout">
+    return (<div className="createAccount-section" name="whatsabout">
       <TitleDecoration
         title="Wystarcza 4 proste kroki"
       />

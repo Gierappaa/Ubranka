@@ -13,8 +13,6 @@ export class App extends React.Component {
         const pathName = this.props.location.pathname;
         const scrollElementId = pathName.replace('/', '');
 
-        console.log(scrollElementId);
-
         scroller.scrollTo(scrollElementId, {
             duration: 1500,
             delay: 100,
@@ -25,7 +23,7 @@ export class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div name="start">
                 <WelcomeSection />
                 <Counter />
                 <CreateAccount />

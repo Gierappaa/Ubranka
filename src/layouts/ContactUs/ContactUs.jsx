@@ -29,7 +29,7 @@ export class ContactUs extends React.Component {
     render() {
 
         return (
-            <div className="contactUs-section" name="ContactUs">
+            <div className="contactUs-section" name="contactus">
                 <div className="contactUs-section__form">
                     <TitleDecoration title="Skontaktuj się z nami">Formularz kontaktowy</TitleDecoration>
 

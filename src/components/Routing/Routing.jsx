@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ContactUs } from '../../layouts/ContactUs/ContactUs';
 import { LogIn } from '../LogIn/LogIn';
 import { Register } from '../Register/Register';
@@ -12,15 +12,21 @@ export class Routing extends React.Component {
     render() {
         return (
             <Router>
-                <Route exact path='/' component={App}/>
+                <Switch>
+                <Route exact path='/' component={App} />
 
                 {/* Tutaj dodaj resztę ścieżek */}
-                <Route path='/aboutus' component={App}/>
+                <Route path='/start'         component={App} />
+                <Route path='/aboutus'       component={App} />
+                <Route path='/whatsabout'    component={App} />
+                <Route path='/organizations' component={App} />
+                <Route path='/contactus'     component={App} />
 
-                <Route path='/contact' component={ContactUs}/>
-                <Route path='/logIn' component={LogIn}/>
-                <Route path='/register' component={Register}/>
-                <Route path='/loggedIn' component={LoggedIn}/>
+                <Route path='/logIn' component={LogIn} />
+                <Route path='/register' component={Register} />
+                <Route path='/loggedIn' component={LoggedIn} />
+                <Route path='*' component={App} />
+                </Switch>
             </Router>
         );
     }

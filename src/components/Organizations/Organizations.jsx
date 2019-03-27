@@ -7,7 +7,7 @@ import { Button } from '../Button/Button';
 export class Organizations extends React.Component {
     render() {
         return (
-            <div className="organizations-section" name="Organizations">
+            <div className="organizations-section" name="organizations">
             <TitleDecoration title= "Komu pomagamy"></TitleDecoration>
             <Button>Fundacjom</Button>
             <Button>Organizacjom pozarządowym</Button>
