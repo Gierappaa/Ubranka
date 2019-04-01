@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './ContactUs.scss';
 import { Button } from '../../components/Button/Button';
 import { TitleDecoration } from '../../components/TitleDecoration/TitleDecoration';

@@ -14,30 +14,48 @@
   &__start {
     display: flex;
     flex-direction: column;
+    // justify-content: flex-end;
     align-items: flex-end;
-    justify-content: flex-end;
-    width: 50%;
+      width: 50%;
+    height: 700px;
   }
   &__squares {
     display: flex;
-    margin: 4   0px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
   }
   &__square {
+    position: relative;
+    top: 50px;
+    right: 150px;
+    margin-left: 20px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
     transform: rotate(45deg);
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     &__text {
+      transform: rotate(-45deg);
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transform: rotate(-45deg);
+      &__position{
+        position:relative;
+        bottom:10px;
+        left:10px;
+      }
+      & p{
+        position: relative;
+        font-size: .9rem;
+        padding: 10px;
+      }
+      
     }
   }
 }

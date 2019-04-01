@@ -9,18 +9,32 @@ export class Header extends React.Component {
         return (
             <div className="header">
                 <div>
-                    <ul className="header__list--logg">
+                    <ul className="header__list__logg">
                         <li><RouterLink to="/logIn">Zaloguj</RouterLink></li>
-                        <li><RouterLink to="/register">Załóż konto</RouterLink></li>
+                        <li><RouterLink className="header__list__logg--bordered" to="/register">Załóż konto</RouterLink></li>
                     </ul>
 
                     <ul className="header__list">
 
-                        <li><RouterLink to="/start">Start</RouterLink></li>
-                        <li><RouterLink to="/whatsabout">O co chodzi</RouterLink></li>
-                        <li><RouterLink to="/aboutus">O nas</RouterLink></li>
-                        <li><RouterLink to="/organizations">Fundacje i organizacje</RouterLink></li>
-                        <li><RouterLink to="/contactus">Kontakt</RouterLink></li>
+                        <li><RouterLink className="header__list__item"
+                            to="/start">
+                            Start</RouterLink></li>
+
+                        <li><RouterLink className="header__list__item"
+                            to="/whatsabout">
+                            O co chodzi</RouterLink></li>
+
+                        <li><RouterLink className="header__list__item"
+                            to="/aboutus">
+                            O nas</RouterLink></li>
+
+                        <li><RouterLink className="header__list__item"
+                            to="/organizations">
+                            Fundacje i organizacje</RouterLink></li>
+
+                        <li><RouterLink className="header__list__item"
+                            to="/contactus">
+                            Kontakt</RouterLink></li>
 
                     </ul>
                 </div>

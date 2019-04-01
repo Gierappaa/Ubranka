@@ -1,5 +1,4 @@
-
-.header{
+.header {
   display: flex;
 
   &__list {
@@ -7,21 +6,28 @@
     list-style-type: none;
     text-decoration: none;
 
-    & li a {
+    &__item {
       text-decoration: inherit;
       color: inherit;
+    }
+
+    & li {
       padding: 10px;
     }
 
-    &--logg{
+    &__logg {
       justify-content: flex-end;
       list-style-type: none;
       display: flex;
       text-decoration: none;
 
-      & li a{
+
+      &--bordered {
+        border: 1px solid yellow;
+      }
+      & li a {
         text-decoration: inherit;
-        color: inherit;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
+        color: inherit;
         padding: 10px;
       }
     }

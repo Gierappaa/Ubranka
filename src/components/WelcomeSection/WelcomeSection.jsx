@@ -3,6 +3,7 @@ import { Header } from "../Header/Header";
 import { TitleDecoration } from "../TitleDecoration/TitleDecoration";
 import './WelcomeSection.scss';
 import { Button } from '../Button/Button.jsx';
+import { BrowserRouter as Router, Route, Link as RouterLink } from "react-router-dom";
 
 export class WelcomeSection extends React.Component {
     render() {
@@ -19,7 +20,10 @@ export class WelcomeSection extends React.Component {
                             fontSize="40px"
                             margin="20px"
                             hasBorder={false}>
-                            Oddaj <br /> rzeczy
+                            <RouterLink
+                                className="header__list__item"
+                                to="/loggedin">
+                                Oddaj <br /> rzeczy</RouterLink>
                         </Button>
                         <Button
                             fontSize="40px" >
