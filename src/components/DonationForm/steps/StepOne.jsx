@@ -7,6 +7,12 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 
 export class StepOne extends React.Component {
+    constructor(props) {
+        super(props);
+
+        console.log(props);
+    }
+
     state = {
         checkedA: false,
         checkedB: false,
@@ -19,22 +25,35 @@ export class StepOne extends React.Component {
         this.setState({ [name]: event.target.checked });
 
     };
+
     handleChangeB = name => event => {
         this.setState({ [name]: event.target.checked });
     };
+
     handleChangeC = name => event => {
         this.setState({ [name]: event.target.checked });
     };
+
     handleChangeD = name => event => {
         this.setState({ [name]: event.target.checked });
     };
+
     handleChangeE = name => event => {
         this.setState({ [name]: event.target.checked });
     };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
+        if (this.props.onSubmit) {
+            this.props.onSubmit(this.state);
+        }
+    };
+
     render() {
         return (
-            <div className="step-one">
-                <Info title="Ważne!" subTitle="Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu  bedziemy 
+            <form className="step-one" onSubmit={this.handleSubmit}>
+                <Info title="Ważne!" subTitle="Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu  bedziemy
                 wiedzieć komu lepiej je przekazać."></Info>
                 <p>krok 1/4</p>
                 <h3>Zaznacz co chcesz oddać</h3>
@@ -76,10 +95,8 @@ export class StepOne extends React.Component {
                         />inne
                     </div>
                 </div>
-                <Button><RouterLink to="/loggedIn/stepTwo">Dalej</RouterLink>
-                </Button>
-
-            </div>
+                <input type="submit" value="Dalej"/>
+            </form>
         )
     }
 }

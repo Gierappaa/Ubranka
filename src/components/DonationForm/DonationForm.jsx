@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
 
 import { StepOne } from './steps/StepOne';
 import { StepTwo } from './steps/StepTwo';
@@ -8,7 +8,7 @@ import { StepFour } from './steps/StepFour';
 import { Summary } from './steps/Summary';
 import { ThankYou } from './steps/ThankYou';
 
-export class DonationForm extends React.Component {
+class DonationFormClass extends React.Component {
     constructor(props) {
         super(props);
 
@@ -19,11 +19,19 @@ export class DonationForm extends React.Component {
         }
     }
 
+    handleItemsToGive = (items) => {
+        // Tutaj setState
+        console.log(items);
+
+        // Tutaj routing
+        this.props.history.push('/loggedIn/stepTwo');
+    };
+
     render() {
         return (
             <Router>
                 <div>
-                    <Route exact path='/loggedIn' component={StepOne} />
+                    <Route exact path='/loggedIn' component={() => <StepOne onSubmit={this.handleItemsToGive}/>}/>
                     <Route path='/loggedIn/stepTwo' component={StepTwo} />
                     <Route path='/loggedIn/stepThree' component={StepThree} />
                     <Route path='/loggedIn/stepFour' component={StepFour} />
@@ -35,3 +43,5 @@ export class DonationForm extends React.Component {
     }
 
 }
+
+export const DonationForm = withRouter(DonationFormClass);

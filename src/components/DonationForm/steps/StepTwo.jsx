@@ -25,16 +25,21 @@ const styles = theme => ({
 export class StepTwo extends React.Component {
     state = {
         bags: "worki",
+        bagsCount: 0,
     };
 
 
     handleChange = event => {
+        console.log('Here!');
+        console.log(event);
+        console.log(this.state);
+
         this.setState({ [event.target.name]: event.target.value });
     };
 
 
     render() {
-        
+
         return (
             <div className="stepOne">
                 <Info title="Ważne!" subTitle="Wszystkie rzeczy do oddania spakuj w 60l worki."></Info>
@@ -46,10 +51,10 @@ export class StepTwo extends React.Component {
                     <FormControl className="worki">
                         <InputLabel htmlFor="bags-simple">Liczba worków</InputLabel>
                         <Select
-                            value={this.state.bags}
+                            value={this.state.bagsCount}
                             onChange={this.handleChange}
                             inputProps={{
-                                name: 'Liczba worków',
+                                name: 'bagsCount',
                                 id: 'bags-simple',
                             }}>
                             <MenuItem value={10}>1</MenuItem>
