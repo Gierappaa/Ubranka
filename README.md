@@ -1,11 +1,10 @@
 # Ubrania
-Jest to strona SPA zrobiona w React'cie i połączona z dodatkiem React Routing.
+This site is a SPA made in React and with addition of React Routing.
 
-
-Aby wyświetlić stronę należy sciągnąć repozytorium a następnie wpisać odpowiednie komendy:
+To see this site in live please download repository and type those comment:
 
 yarn install
 yarn dev
 
 
-Jeśli chodzi o wersję demonstracyjną to jeszczę będę nad nią pracował.
+Demo version is under construction.
